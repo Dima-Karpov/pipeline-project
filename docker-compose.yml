@@ -1,0 +1,9 @@
+services:
+  pipeline-app:
+    container_name: pipeline-app
+    build:
+      context: .
+      args:
+        - GOLANG_VERSION=1.22.0
+    ports:
+      - "8989:8989"
